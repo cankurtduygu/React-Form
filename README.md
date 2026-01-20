@@ -36,7 +36,9 @@ Users can:
 
 ---
 
-##  Project Structure
+## 🧱 Project Structure
+
+```text
 src/
 ├── assets/                # Static assets (images, icons, etc.)
 ├── components/
@@ -54,4 +56,5 @@ src/
 ├── index.css              # Global styles (Tailwind + shadcn)
 ├── main.tsx               # Application entry point
 public/
-├── index.html
+└── index.html
+
