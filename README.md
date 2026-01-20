@@ -1,73 +1,35 @@
-# React + TypeScript + Vite
+Modern React Form with shadcn/ui
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a small modern React form application built to demonstrate best practices in form handling and validation using today’s most popular React tools.
 
-Currently, two official plugins are available:
+The focus of this project is building a clean, accessible, and scalable form structure rather than visual complexity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠 Tools & Libraries Used
 
-## React Compiler
+🎨 shadcn/ui – aesthetic and accessible UI components
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🛡️ Zod – type-safe schema validation
 
-## Expanding the ESLint configuration
+⚙️ React Hook Form – efficient form state management and easy integration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+✨ What This Project Covers
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Building a clean and modern form UI with shadcn components
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Defining advanced and type-safe validation rules using Zod
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Managing form state and submission with React Hook Form
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Displaying validation errors and user feedback
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Creating a maintainable and scalable form architecture
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🎥 What I Demonstrate Step by Step
+
+Using shadcn components to create a simple yet effective interface
+
+Implementing advanced validation logic with Zod
+
+Handling form state and submission flow with React Hook Form
+
+Providing feedback to the user after form submission
