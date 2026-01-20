@@ -1,35 +1,57 @@
-Modern React Form with shadcn/ui
+# 🧾 Modern React Form
 
-This project is a small modern React form application built to demonstrate best practices in form handling and validation using today’s most popular React tools.
+## 📖 Description
+This project is a **modern form application built with React**, focusing on clean UI, accessibility, and robust form validation.
 
-The focus of this project is building a clean, accessible, and scalable form structure rather than visual complexity.
+The goal of this project is to demonstrate how **Shadcn UI**, **React Hook Form**, and **Zod** can be combined to build a **scalable and user-friendly form** following modern React best practices.
 
-🛠 Tools & Libraries Used
+---
 
-🎨 shadcn/ui – aesthetic and accessible UI components
+## 🎯 Features
+Users can:
 
-🛡️ Zod – type-safe schema validation
+-  Fill out a modern, accessible form UI
+-  Get real-time validation feedback
+-  Validate email format and required fields
+-  Select predefined options using controlled inputs
+-  Submit the form only when all validation rules are met
+-  See clear error messages for invalid inputs
 
-⚙️ React Hook Form – efficient form state management and easy integration
+---
 
-✨ What This Project Covers
+## 🧩 Technologies Used
+-  **Shadcn UI** – aesthetic and accessible UI components  
+-  **React Hook Form** – efficient form state management  
+-  **Zod** – type-safe schema-based validation  
+-  **React** – component-based UI development  
 
-Building a clean and modern form UI with shadcn components
+---
 
-Defining advanced and type-safe validation rules using Zod
+##  What I Practiced
+- Integrating **React Hook Form** with custom UI components  
+- Writing **Zod schemas** for real-world form validation  
+- Handling controlled and uncontrolled inputs  
+- Managing form state and error messages cleanly  
+- Building reusable and maintainable React components  
 
-Managing form state and submission with React Hook Form
+---
 
-Displaying validation errors and user feedback
-
-Creating a maintainable and scalable form architecture
-
-🎥 What I Demonstrate Step by Step
-
-Using shadcn components to create a simple yet effective interface
-
-Implementing advanced validation logic with Zod
-
-Handling form state and submission flow with React Hook Form
-
-Providing feedback to the user after form submission
+##  Project Structure
+src/
+├── assets/                # Static assets (images, icons, etc.)
+├── components/
+│   └── ui/                # shadcn/ui components
+│       ├── button.tsx
+│       ├── checkbox.tsx
+│       ├── form.tsx
+│       ├── input.tsx
+│       ├── label.tsx
+│       ├── radio-group.tsx
+│       ├── sonner.tsx
+│       └── textarea.tsx
+├── lib/                   # Utility functions
+├── App.tsx                # Main application component
+├── index.css              # Global styles (Tailwind + shadcn)
+├── main.tsx               # Application entry point
+public/
+├── index.html
