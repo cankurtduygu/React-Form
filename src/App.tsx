@@ -7,6 +7,11 @@ import { FormControl, FormField, FormItem, FormLabel } from "./components/ui/for
 import { Input } from "./components/ui/input"
 import { RadioGroup, RadioGroupItem } from "./components/ui/radio-group"
 import { Textarea } from "./components/ui/textarea"
+// import { Check } from "lucide-react"
+import { Checkbox } from "./components/ui/checkbox"
+import { Toaster } from "@/components/ui/sonner"
+import { toast } from "sonner"
+
 
 
 
@@ -35,10 +40,13 @@ function App() {
 
   const onSubmit = (data: z.infer<typeof formSchema>) => {
     console.log("Form submitted", data);  
+    toast.success("Form submitted successfully!")
+    form.reset();
   }
     
   return (
     <>
+      <Toaster position="top-center"/>
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
@@ -136,6 +144,27 @@ function App() {
                 </FormItem>
               )}
             />
+            <FormField
+              name="terms"
+              control={form.control}
+              render={({ field }) => (
+                <FormItem className="col-[1/-1]">
+                  <div className="flex items-center">
+                    <FormControl>
+                    <Checkbox
+                      checked={field.value}
+                      onCheckedChange={field.onChange}
+                    />
+                  </FormControl>
+                  <FormLabel className="text-sm ml-2">I agree to the terms and conditions</FormLabel>
+
+                  </div>
+                  
+                  
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
               
 
              
@@ -144,7 +173,7 @@ function App() {
 
 
           </div>
-          <Button>Submit</Button>
+          <Button className="w-full mt-4 h-12 text-xl">Submit</Button>
         </form>
       </Form>
       
